@@ -1,0 +1,42 @@
+# .gitignore (ルートフォルダに置く場合)
+
+# ---------------------------------
+# Python / Flask バックエンド関連
+# ---------------------------------
+
+# 「backendフォルダの中の」venvフォルダを無視
+backend/venv/
+
+# 「backendフォルダの中の」.envファイルを無視
+backend/.env
+
+# Pythonが自動生成するキャッシュ（場所を問わず全て無視）
+__pycache__/
+*.pyc
+
+
+# ---------------------------------
+# Node.js / React フロントエンド関連
+# ---------------------------------
+
+# 「frontendフォルダの中の」node_modulesフォルダを無視
+frontend/node_modules/
+
+# 「frontendフォルダの中の」ビルド成果物を無視
+frontend/build/
+frontend/dist/
+
+# 「frontendフォルダの中の」.env関連ファイルを無視
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+
+# ---------------------------------
+# OSやエディタが自動生成するファイル
+# ---------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
